@@ -1,0 +1,174 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #e0f2fe, #f3e8ff, #fce7f3);
+    color: #333;
+    line-height: 1.7;
+    padding: 30px 15px;
+}
+
+/* Header */
+header {
+    max-width: 900px;
+    margin: 0 auto 30px;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 17px;
+    color: #e0e7ff;
+}
+
+/* Main Container */
+main {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Section Cards */
+section {
+    background: rgba(255, 255, 255, 0.95);
+    margin-bottom: 25px;
+    padding: 25px 30px;
+    border-radius: 16px;
+    border-left: 6px solid #7c3aed;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.13);
+}
+
+/* Section Headings */
+section h2 {
+    color: #5b21b6;
+    font-size: 25px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #ddd6fe;
+}
+
+/* Profile Image */
+section img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #8b5cf6;
+    margin: 15px auto 20px;
+    box-shadow: 0 5px 15px rgba(124, 58, 237, 0.25);
+    transition: transform 0.3s ease;
+}
+
+section img:hover {
+    transform: scale(1.08);
+}
+
+/* Paragraph */
+section p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Lists */
+ul,
+ol {
+    padding-left: 25px;
+}
+
+li {
+    padding: 5px 0;
+    transition: color 0.2s ease;
+}
+
+li::marker {
+    color: #7c3aed;
+}
+
+li:hover {
+    color: #6d28d9;
+}
+
+/* Useful Links */
+section a {
+    display: inline-block;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+section a:hover {
+    color: #9333ea;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    max-width: 900px;
+    margin: 30px auto 0;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, #1e3a8a, #6d28d9);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 29px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+
+    section img {
+        width: 130px;
+        height: 130px;
+    }
+}
