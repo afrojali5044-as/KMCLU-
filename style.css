@@ -1,39 +1,44 @@
-/* General Styling */
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(135deg, #e0f2fe, #f3e8ff, #fce7f3);
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
     color: #333;
     line-height: 1.7;
     padding: 30px 15px;
 }
 
-/* Header */
+/* Header Styling */
 header {
     max-width: 900px;
     margin: 0 auto 30px;
     padding: 40px 20px;
     text-align: center;
     color: white;
-    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    background: linear-gradient(135deg, #141e30, #243b55);
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
-    font-size: 38px;
+    font-size: 36px;
+    font-weight: 700;
     margin-bottom: 10px;
     letter-spacing: 1px;
 }
 
 header p {
-    font-size: 17px;
-    color: #e0e7ff;
+    font-size: 16px;
+    color: #dbeafe;
 }
 
 /* Main Container */
@@ -46,26 +51,27 @@ main {
 section {
     background: rgba(255, 255, 255, 0.95);
     margin-bottom: 25px;
-    padding: 25px 30px;
+    padding: 28px;
     border-radius: 16px;
-    border-left: 6px solid #7c3aed;
-    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 6px solid #6c63ff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
 }
 
 /* Hover Effect */
 section:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.13);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
 }
 
 /* Section Headings */
 section h2 {
-    color: #5b21b6;
-    font-size: 25px;
-    margin-bottom: 15px;
+    color: #243b55;
+    font-size: 24px;
+    margin-bottom: 18px;
     padding-bottom: 8px;
-    border-bottom: 2px solid #ddd6fe;
+    border-bottom: 2px solid #e0c3fc;
 }
 
 /* Profile Image */
@@ -75,9 +81,9 @@ section img {
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid #8b5cf6;
-    margin: 15px auto 20px;
-    box-shadow: 0 5px 15px rgba(124, 58, 237, 0.25);
+    border: 5px solid #8e7dff;
+    margin: 0 auto 20px;
+    box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
     transition: transform 0.3s ease;
 }
 
@@ -87,8 +93,9 @@ section img:hover {
 
 /* Paragraph */
 section p {
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 15px;
+    color: #555;
+    text-align: justify;
 }
 
 /* Lists */
@@ -98,43 +105,45 @@ ol {
 }
 
 li {
-    padding: 5px 0;
-    transition: color 0.2s ease;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    color: #444;
 }
 
 li::marker {
-    color: #7c3aed;
-}
-
-li:hover {
-    color: #6d28d9;
+    color: #6c63ff;
+    font-weight: bold;
 }
 
 /* Useful Links */
 section a {
     display: inline-block;
-    color: #2563eb;
+    margin: 5px 0;
+    padding: 8px 18px;
     text-decoration: none;
-    font-weight: 600;
-    padding: 5px 0;
-    transition: color 0.3s ease;
+    color: white;
+    background: linear-gradient(135deg, #6c63ff, #4834d4);
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
 section a:hover {
-    color: #9333ea;
-    text-decoration: underline;
+    background: linear-gradient(135deg, #4834d4, #141e30);
+    transform: translateX(5px);
+    box-shadow: 0 5px 12px rgba(72, 52, 212, 0.3);
 }
 
-/* Footer */
+/* Footer Styling */
 footer {
     max-width: 900px;
     margin: 30px auto 0;
     padding: 20px;
     text-align: center;
+    background: #141e30;
     color: white;
-    background: linear-gradient(135deg, #1e3a8a, #6d28d9);
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 footer p {
@@ -152,23 +161,33 @@ footer p {
     }
 
     header h1 {
-        font-size: 29px;
+        font-size: 27px;
     }
 
     header p {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     section {
         padding: 20px;
+        margin-bottom: 18px;
     }
 
     section h2 {
-        font-size: 22px;
+        font-size: 21px;
     }
 
     section img {
         width: 130px;
         height: 130px;
+    }
+
+    section p,
+    li {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 12px;
     }
 }
